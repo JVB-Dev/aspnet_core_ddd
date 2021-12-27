@@ -15,6 +15,8 @@ namespace Api.Data.Context
             base.OnModelCreating(modelBuilder);  
 
             modelBuilder.Entity<UserEntity>(new UserMap().Configure);
+            
+            System.Console.WriteLine("Apenas um teste");
         }
     }
 }
